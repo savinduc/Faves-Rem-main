@@ -1,0 +1,42 @@
+.dashboard-top-navbar {
+    height: 60px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-top-navbar h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.dashboard-navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard-navbar-icons i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.dashboard-navbar-icons i:hover {
+    color: #1c822d;
+}
+
+.manage-teachers-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.manage-teachers-btn:hover {
+    background-color: #1c822d;
+}

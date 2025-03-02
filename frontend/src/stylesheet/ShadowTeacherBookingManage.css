@@ -1,0 +1,169 @@
+.main-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+.content-container {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+  font-size: 24px;
+  color: #213623;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.category-select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  outline: none;
+}
+
+.category-select:focus {
+  border-color: #213623;
+}
+
+.table-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.booking-table th,
+.booking-table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.booking-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.booking-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.iconbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.iconbtn i {
+  margin-right: 3px;
+  color: #213623;
+}
+
+.edit-btn {
+  color: #213623;
+}
+
+.edit-btn:hover {
+  background-color: rgba(33, 54, 35, 0.1);
+}
+
+.save-btn {
+  color: #28a745;
+}
+
+.save-btn:hover {
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+.cancel-btn {
+  color: #dc3545;
+}
+
+.cancel-btn:hover {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.delete-btn {
+  color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+input, select {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  border-color: #213623;
+  outline: none;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.pagination__link {
+  margin: 0 4px;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #213623;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.pagination__link:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination__link--active {
+  background-color: #213623;
+  color: white;
+  border-color: #213623;
+}
+
+.pagination__link--disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}

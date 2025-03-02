@@ -1,0 +1,114 @@
+/* Global Font Styling */
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+/* Services Section */
+.frservices-section {
+  margin-top: 130px;
+  padding: 4rem 10%;
+  background: linear-gradient(135deg, #f4f4f4, #e8e8e8);
+  color: #333;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.frservices-section h2 {
+  font-size: 2.8rem;
+  color: #137729;;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.frservices-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+}
+
+/* Services Container */
+.frservices-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 60px;
+}
+
+/* Individual Service Card */
+.frservice-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.frservice-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Image */
+.frservice-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Service Title */
+.frservice-card h3 {
+  font-size: 1.8rem;
+  color: #148c46;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Service Description */
+.frservice-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Service Link/Button */
+.frservice-link {
+  display: inline-block;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #1b9a30, #0d7c32);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.frservice-link:hover {
+  background: linear-gradient(135deg, #148c1e, #11b12c);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .frservices-container {
+    grid-template-columns: 1fr;
+  }
+
+  .frservices-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .frservices-description {
+    font-size: 1rem;
+  }
+}

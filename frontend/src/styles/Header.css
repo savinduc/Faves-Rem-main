@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+    --background: rgb(44, 41, 41);
+    --second-background: rgb(66, 43, 63);
+    --primary-color: #0e5a25;
+    --hover-color: #1c7d3e;
+    --text-color: #333;
+    --nav-bg: rgba(137, 184, 148, 0.9);
+    --nav-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--nav-shadow);
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    transition: 0.2s ease-in-out;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-left: auto;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+nav ul a {
+    color: var(--text-color);
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+    text-decoration: none !important;
+    font-weight: 500;
+}
+
+nav ul a:hover {
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+#menu {
+    display: none;
+    color: var(--primary-color);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Header */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+        padding: 1em 5%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+        max-height: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 60px;
+        right: 5%;
+        background-color: var(--nav-bg);
+        backdrop-filter: blur(10px);
+        box-shadow: var(--nav-shadow);
+        border-radius: 8px;
+        width: 200px;
+        padding: 1em;
+    }
+
+    nav ul.active {
+        max-height: 400px;
+        visibility: visible;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    #menu {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 1em 5%;
+    }
+
+    nav ul {
+        gap: 0.5em;
+    }
+
+    nav ul a {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+}

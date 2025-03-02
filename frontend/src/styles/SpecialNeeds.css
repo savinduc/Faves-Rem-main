@@ -1,0 +1,394 @@
+.body{
+    font-family: 'Poppins','Arial', sans-serif;
+}
+
+.book-teacher {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: rgb(4, 4, 4);
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+  
+  .book-teacher-cta-button {
+    background-color: #38addc;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+.frspecial-needs-container {
+    background: linear-gradient(to bottom, #f3f4f7, #e0e7f4);
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.frspecial-needs-title {
+    margin-top: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #4a8c60;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+  .frspecial-needs-hero-image {
+    margin-top: -50px;
+    margin-bottom: 230px;
+    height: 400px;
+    width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 1024px) {
+    .frspecial-needs-hero-image {
+        height: 400px;
+        width: 700px;
+        margin-bottom: 170px;
+    }
+}
+
+@media (max-width: 768px) {
+    .frspecial-needs-hero-image {
+        height: 300px;
+        width: 500px;
+        margin-bottom: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .frspecial-needs-hero-image {
+        height: 200px;
+        width: 100%;
+        margin-top: -30px;
+        margin-bottom: 70px;
+        border-radius: 10px;
+    }
+}
+
+.frradial-layout {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    height: 650px;
+    border: 2px dashed rgba(75, 0, 130, 0.3);
+    border-radius: 50%;
+    overflow: visible;
+    margin-bottom: 280px; 
+}
+
+.frradial-item {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.frradial-item:hover {
+    transform: translate(-50%, -50%) scale(1.15);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    background-color: rgba(90, 205, 128, 0.9);
+}
+
+.item-0 {
+    top: 10%;
+    left: 50%;
+}
+
+.item-1 {
+    top: 50%;
+    left: 90%;
+}
+
+.item-2 {
+    top: 110%;
+    left: 50%;
+}
+
+.item-3 {
+    top: 50%;
+    left: 10%;
+}
+
+.frradial-icon {
+    font-size: 3rem;
+    color: white;
+    background: #209246;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+
+.frradial-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #008245;
+    margin-top: 0.5rem;
+}
+
+.frradial-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .frradial-layout {
+        width: 100%;
+        height: 450px;
+    }
+
+    .frradial-item {
+        width: 140px;
+        height: 140px;
+        font-size: 0.8rem;
+    }
+
+    .frradial-icon {
+        font-size: 1.5rem;
+        padding: 0.6rem;
+    }
+
+    .frradial-title {
+        font-size: 1.1rem;
+    }
+
+    .frradial-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .frspecial-needs-title {
+        font-size: 2.5rem;
+    }
+
+    .frspecial-needs-intro {
+        font-size: 1.2rem;
+    }
+
+    .frradial-layout {
+        height: 400px;
+    }
+
+    .frradial-item {
+        width: 120px;
+        height: 120px;
+    }
+
+    .frradial-icon {
+        font-size: 1.2rem;
+        padding: 0.4rem;
+    }
+
+    .frradial-title {
+        font-size: 1rem;
+    }
+
+    .frradial-description {
+        font-size: 0.8rem;
+    }
+}
+
+.frspecial-needs-description {
+    font-size: 1.2rem;
+    color: #629731 !important;
+    margin-bottom: 10rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frspecial-teacher-call-to-action {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #4a8c7c;
+    color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.frspecial-teacher-call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: rgb(20, 8, 126);
+}
+
+.frspecial-teacher-call-to-action p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.special-teacher-cta-button {
+    background-color: #5cdf45;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.special-teacher-cta-button:hover {
+    background-color: #31b81c;
+    transform: scale(1.05);
+}
+
+.special-teacher-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.special-teacher-modal-content {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.special-teacher-modal-content h2 {
+    margin-bottom: 15px;
+    color: #43d356;
+}
+
+.special-teacher-modal-content p {
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.special-teacher-modal-close {
+    background-color: #c23333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.special-teacher-modal-close:hover {
+    background-color: #e0573e;
+}
+
+@media (max-width: 768px) {
+    .frspecial-needs-description {
+        font-size: 1rem; 
+        margin-bottom: 5rem;
+    }
+
+    .frspecial-teacher-call-to-action {
+        padding: 30px 15px; 
+    }
+
+    .frspecial-teacher-call-to-action h2 {
+        font-size: 1.8rem; 
+    }
+
+    .frspecial-teacher-call-to-action p {
+        font-size: 1rem; 
+    }
+
+    .special-teacher-cta-button {
+        font-size: 1rem; 
+        padding: 8px 16px; 
+    }
+
+    .special-teacher-modal-content {
+        width: 85%; 
+        padding: 15px 20px; 
+    }
+
+    .special-teacher-modal-content h2 {
+        font-size: 1.6rem; 
+    }
+
+    .special-teacher-modal-content p {
+        font-size: 1rem; 
+    }
+
+    .special-teacher-modal-close {
+        font-size: 1rem; 
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .frspecial-needs-description {
+        font-size: 0.9rem; 
+        margin-bottom: 3rem; 
+    }
+
+    .frspecial-teacher-call-to-action {
+        padding: 25px 10px; 
+    }
+
+    .frspecial-teacher-call-to-action h2 {
+        font-size: 1.5rem;
+    }
+
+    .frspecial-teacher-call-to-action p {
+        font-size: 1.1rem; 
+    }
+
+    .special-teacher-cta-button {
+        font-size: 1rem; 
+        padding: 8px 16px; 
+    }
+
+    .special-teacher-modal-content {
+        width: 80%; 
+    }
+
+    .special-teacher-modal-content h2 {
+        font-size: 1.4rem; 
+    }
+
+    .special-teacher-modal-content p {
+        font-size: 0.9rem; 
+    }
+
+    .special-teacher-modal-close {
+        font-size: 1rem; 
+        padding: 8px 16px; 
+    }
+}

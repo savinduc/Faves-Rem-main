@@ -1,0 +1,63 @@
+.body{
+  font-family: 'Poppins','Arial', sans-serif;
+}
+
+   h1 {
+    margin-top: 130px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+  }
+  
+  .frservice-header p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  .frservice-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .frservice-card h3 {
+    font-size: 1.5rem;
+    color: #138539;
+  }
+  
+  .frservice-card p {
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.6;
+  }
+  
+  .frservice-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive for small screens */
+  @media (max-width: 768px) {
+    .frservice-card {
+      padding: 1rem;
+      margin: 1rem 0;
+      margin-top: 4rem;
+    }
+  
+    .frservice-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .frservice-header p {
+      font-size: 1.1rem;
+    }
+  }
+  

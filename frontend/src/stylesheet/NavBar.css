@@ -1,0 +1,42 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    background-color: #f9f9f9;
+    flex-direction: column; /* Important: Add this to make navbar on top */
+    margin-top: 0%;
+    padding: 0%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.navbar {
+    background-color: #213623; /* Example color - adjust as needed */
+    color: white;
+    padding: 10px 0; /* Adjust padding as needed */
+    width: 100%;
+    border-radius: 5px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center the links */
+}
+
+.navbar li {
+    display: inline; /* Make list items appear side-by-side */
+    margin: 0 10px; /* Adjust spacing between links */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.navbar a:hover {
+    background-color: #324c34; /* Example hover effect */
+}

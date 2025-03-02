@@ -1,0 +1,139 @@
+.body{
+    font-family: 'Poppins','Arial', sans-serif;
+}
+
+.frabout-us-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem 10%;
+    background: linear-gradient(135deg, #f5f7fa, #374d43);
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    gap: 2rem;
+    
+}
+
+.frabout-us-content {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.frabout-us-content h2 {
+    margin-top: 120px;
+    font-size: 2.5rem;
+    color: #137729;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.frabout-us-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #272525;
+    text-align: justify;
+}
+
+.frabout-us-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem; 
+}
+
+.aboutimage {
+    width: 100%; 
+    height: auto; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.aboutimage1,.aboutimage2, .aboutimage3, .aboutimage4, .aboutimage5, .aboutimage6 {
+    height: 400px; 
+   
+}
+
+.aboutimage1 {
+    background-image: url('../assets/p2.jpg'); 
+    margin-bottom: 60px;
+    margin-top: 120px;
+}
+.aboutimage2 {
+    background-image: url('../assets/p3.jpg'); 
+    margin-bottom: 60px;
+
+}
+
+.aboutimage3 {
+    background-image: url('../assets/p4.jpg'); 
+    margin-bottom: 60px;
+}
+
+.aboutimage4 {
+    background-image: url('../assets/p5.jpg'); 
+    margin-bottom: 60px;
+}
+
+.aboutimage5 {
+    background-image: url('../assets/p6.jpg'); 
+    margin-bottom: 60px;
+}
+
+.aboutimage6 {
+    background-image: url('../assets/p7.jpg'); 
+    margin-bottom: 60px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .frabout-us-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 5%;
+    }
+
+    .frabout-us-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .frabout-us-images {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .aboutimage {
+        height: 400px;
+    }
+
+    .aboutimage2, .aboutimage3, .aboutimage4, .aboutimage5, .aboutimage6 {
+        margin-bottom: 30px; 
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    .frabout-us-content h2 {
+        font-size: 2rem; 
+    }
+
+    .frabout-us-content p {
+        font-size: 1rem; 
+        line-height: 1.6;
+    }
+
+    .aboutimage {
+        height: 150px; 
+    }
+
+    .aboutimage2, .aboutimage3, .aboutimage4, .aboutimage5, .aboutimage6 {
+        margin-bottom: 20px;
+    }
+}
+
+
+

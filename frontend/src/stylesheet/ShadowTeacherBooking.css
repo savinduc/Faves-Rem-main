@@ -1,0 +1,87 @@
+/* Root container */
+.root {
+  background-color: #ffffff99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  margin-top: 1620px;
+  margin-bottom: 220px;
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  
+}
+
+.content {
+  padding: 30px;
+}
+
+/* Title section */
+.title-section h2 {
+  color: #203822;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.caption {
+  font-size: 16px;
+  text-align: center;
+  color: #616161;
+  margin-bottom: 20px;
+}
+
+/* Divider */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.shadowsubmit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  background-color: #1c822d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shadowsubmit-btn:hover {
+  background-color: #203822;
+}
+

@@ -1,0 +1,399 @@
+.body{
+    font-family: 'Poppins','Arial', sans-serif;
+}
+
+.frhome-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.frhero-section {
+    height: 100vh;
+    background-image: url('../assets/p1.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.frhero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.301); /* Adjust alpha value for desired opacity */
+    z-index: 0;
+}
+
+.frhero-section * {
+    position: relative;
+    z-index: 1; /* Ensures content is above the overlay */
+}
+
+.frhero-content {
+    z-index: 2;
+    color: white;
+    max-width: 800px; 
+    padding: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    border-radius: 10px; 
+}
+
+.frhero-content h1 {
+    font-size: 4rem; 
+    margin-bottom: 15px;
+    margin-top: 15px; 
+    font-family: 'Arial', sans-serif; 
+    color: rgb(37, 150, 56);
+    font-weight: bold
+    
+}
+
+.frhero-content p {
+    font-size: 1.5rem; 
+    margin-bottom: 25px; 
+    line-height: 1.5; 
+ 
+}
+
+.homecta-btn {
+    padding: 14px 28px;
+    background-color: #f7f1f1;
+    color: #256947;
+    border: 2px solid #256947;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.5rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+.homecta-btn:hover {
+    background-color: #07421b;
+    color: #f7f1f1;
+    border: 2px solid #f7f1f1; 
+    transform: scale(1.05);
+}
+
+/* Goal Section */
+.homegoals-section {
+    padding: 4rem 10%;
+    background: #e0ece2;
+    color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border-top: 5px solid #166440;
+    border-bottom: 5px solid #166440;
+}
+
+.homegoals-section h2 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+    color: #137729;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Goals Container */
+.homegoals-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Individual Goal Card */
+.homegoal-card {
+    background: #ffffff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    text-align: center;
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.homegoal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.homegoal-icon {
+    font-size: 3rem;
+    color: #16bb60;
+    margin-bottom: 1.5rem;
+    animation: bounce 1s infinite;
+}
+
+.homegoal-icon i {
+    display: inline-block;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.homegoal-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #168347;
+}
+
+.homegoal-card p {
+    font-size: 1rem;
+    color: #698675;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .homegoals-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homegoal-card {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+.frfeatures-section {
+    padding: 5rem 10%;
+    text-align: center;
+    color: white;
+    position: relative;
+    background: url('../assets/background2.jpg') no-repeat center center; 
+    background-size: cover; 
+    z-index: 1; 
+    border-radius: 0;
+}
+
+.frfeatures-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+}
+
+
+.frfeatures-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #eaf1ed;
+    position: relative;
+    z-index: 1;
+}
+
+.frfeatures-section p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #cfd5d1;
+    position: relative;
+    z-index: 1;
+}
+
+.frfeature-boxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.frfeature-box {
+    background-color: #000000;
+    opacity: 10;
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    width: 22%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.frfeature-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+    z-index: 0;
+    transition: left 0.6s ease;
+}
+
+.frfeature-box:hover::before {
+    left: 100%;
+}
+
+.frfeature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.5);
+}
+
+.frfeature-box i {
+    font-size: 3rem;
+    color: #66ff52;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.frfeature-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #e4e4e4;
+    position: relative;
+    z-index: 1;
+}
+
+.frfeature-box p {
+    font-size: 1rem;
+    color: #8dff93;
+    position: relative;
+    z-index: 1;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .frfeature-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frfeature-box {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* Stats Section */
+.homestats-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 10%;
+    background-color: #1f1f1f;
+    color: white;
+    gap: 2rem;
+    border-top: 5px solid #166440;
+    border-bottom: 5px solid #166440;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.homestats-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e2dfe4;
+    z-index: 0;
+}
+
+.homestats-box {
+    position: relative;
+    z-index: 1;
+    width: 22%;
+    padding: 1.5rem;
+    background-color: #04331f;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.homestats-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    z-index: 0;
+    transition: left 0.5s ease;
+}
+
+.homestats-box:hover::before {
+    left: 100%;
+}
+
+.homestats-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.homestats-box h3 {
+    font-size: 2.5rem; 
+    color: #66ff52;
+    margin-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.homestats-box p {
+    font-size: 1rem; 
+    color: #c4c4c4;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    letter-spacing: 0.3px;
+}
+
+/* Optional for smaller screens */
+@media (max-width: 768px) {
+    .homestats-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 5%;
+    }
+
+    .homestats-box {
+        width: 50%;
+        margin-bottom: 1.5rem;
+    }
+
+    .homestats-box h3 {
+        font-size: 2rem; 
+    }
+
+    .homestats-box p {
+        font-size: 0.9rem; 
+    }
+}

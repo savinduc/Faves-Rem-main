@@ -1,0 +1,118 @@
+/* Root container */
+.root {
+    margin-top: 20vh;
+    background-color: #ffffff99;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Logo section */
+  .logo-section {
+    margin-top: 30vh;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Card section */
+  .card {
+    background-color: white;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .content {
+    padding: 30px;
+  }
+  
+  /* Title section */
+  .title-section h2 {
+    color: #5b5eab;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .caption {
+    font-size: 16px;
+    text-align: center;
+    color: #616161;
+    margin-bottom: 20px;
+  }
+  
+  /* Divider */
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+  }
+  
+  /* Form styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #5b5eab;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #5b5eab;
+  }
+  
+  /* Footer section */
+  .footer-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: #5b5eab;
+    font-size: 16px;
+  }
+  
+  /* Footer links section */
+  .footer-links {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #616161;
+  }
+  
+  .footer-links p {
+    margin: 5px 0;
+  }
+  
